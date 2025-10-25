@@ -86,7 +86,7 @@
             <div class="card p-6 md:p-8">
                 <h2 class="text-2xl font-bold mb-4 text-center">A Three-Compartment Kinetic Model</h2>
                 <p class="text-center text-gray-700 mb-6">Volume kinetic analysis shows crystalloid sequentially expands three functional compartments, not just two.</p>
-                <img src="https://www.frontiersin.org/files/Articles/1439035/fphys-15-1439035-g001.jpg" alt="Three-compartment kinetic model and volume expansion graph" class="w-full h-auto rounded-lg border border-gray-200" onerror="this.onerror=null;this.src='https://placehold.co/800x400/ffffff/64748b?text=Figure+2:+Kinetic+Model';">
+                <img src="fluid2.png" alt="Three-compartment kinetic model and volume expansion graph" class="w-full h-auto rounded-lg border border-gray-200" onerror="this.onerror=null;this.src='https://placehold.co/800x400/ffffff/64748b?text=Figure+2:+Kinetic+Model+(fluid2.png)';">
                 <p class="caption">
                     <strong>A:</strong> Fluid infuses into the Central space (Plasma, Vc), equilibrates with a fast-exchange interstitial pool (Vt1), and then a slow-exchange pool (Vt2). <strong>B & C:</strong> After a 1.9L Ringer's bolus, Vt2 opens and accumulates fluid, which persists long after plasma volume (Vc) has returned towards baseline.
                 </p>
@@ -116,7 +116,101 @@
                 </div>
             </div>
 
-            <!-- Card 6: Further Resources -->
+            <!-- Card 4: Visualising the Compartments -->
+            <div class="card p-6 md:p-8">
+                <h2 class="text-2xl font-bold mb-6 text-center">Visualising the Compartments in Different States</h2>
+                <div class="grid md:grid-cols-3 gap-6 text-center">
+                    
+                    <!-- State 1: Baseline -->
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">1. Baseline State</h3>
+                        <p class="text-sm text-gray-600 mb-4 h-12 md:h-16">Compartments are in equilibrium. Interstitial pressure is negative.</p>
+                        <div class="flex justify-around items-end h-24">
+                            <div class="w-1/4">
+                                <div class="bg-blue-300 rounded-t-md" style="height: 40px;"></div>
+                                <p class="text-xs font-medium mt-1">Vc</p>
+                            </div>
+                            <div class="w-1/4">
+                                <div class="bg-green-300 rounded-t-md" style="height: 50px;"></div>
+                                <p class="text-xs font-medium mt-1">V<sub>t1</sub></p>
+                            </div>
+                            <div class="w-1/4">
+                                <div class="bg-orange-300 rounded-t-md" style="height: 30px;"></div>
+                                <p class="text-xs font-medium mt-1">V<sub>t2</sub></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- State 2: Crystalloid Bolus -->
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">2. Crystalloid Bolus (>1.5L)</h3>
+                        <p class="text-sm text-gray-600 mb-4 h-12 md:h-16">V<sub>t1</sub> fills, then the V<sub>t2</sub> 'overflow' reservoir opens.</p>
+                        <div class="flex justify-around items-end h-24">
+                            <div class="w-1/4">
+                                <div class="bg-blue-500 rounded-t-md" style="height: 60px;"></div>
+                                <p class="text-xs font-medium mt-1">Vc</p>
+                            </div>
+                            <div class="w-1/4">
+                                <div class="bg-green-500 rounded-t-md" style="height: 80px;"></div>
+                                <p class="text-xs font-medium mt-1">V<sub>t1</sub></p>
+                            </div>
+                            <div class="w-1/4">
+                                <div class="bg-orange-500 rounded-t-md" style="height: 60px;"></div>
+                                <p class="text-xs font-medium mt-1">V<sub>t2</sub></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- State 3: Sepsis / Inflammation -->
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">3. Sepsis / Inflammation</h3>
+                        <p class="text-sm text-gray-600 mb-4 h-12 md:h-16">V<sub>t2</sub> 'sucks' fluid from V<sub>t1</sub>, causing hypovolaemia and oedema.</p>
+                        <div class="flex justify-around items-end h-24 relative">
+                            <!-- Arrow -->
+                            <svg classWhat="absolute text-red-500" style="width: 30%; left: 35%; top: 10px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                            </svg>
+                            <p class="absolute text-red-600 font-bold" style="font-size: 0.7rem; left: 40%; top: 28px;">SUCTION</p>
+
+                            <div class="w-1/4">
+                                <div class="bg-blue-300 border-2 border-blue-400" style="height: 30px;"></div>
+                                <p class="text-xs font-medium mt-1">Vc</p>
+                            </div>
+                            <div class="w-1/4">
+                                <div class="bg-green-300 border-2 border-green-400" style="height: 35px;"></div>
+                                <p class="text-xs font-medium mt-1">V<sub>t1</sub></p>
+                            </div>
+                            <div class="w-1/4">
+                                <div class="bg-orange-500 rounded-t-md" style="height: 90px;"></div>
+                                <p class="text-xs font-medium mt-1">V<sub>t2</sub></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- NEW Card 5: V_t2 Saturation -->
+            <div class="card p-6 md:p-8">
+                <h2 class="text-2xl font-bold mb-4 text-center">V<sub>t2</sub> Saturation: The 'Overflow' Limit</h2>
+                <p class="text-center text-gray-700 mb-6">The V<sub>t2</sub> compartment isn't a bottomless pit. After an initial bolus fills it (peaking around 600ml), a second bolus 4 hours later primarily expands the fast-exchange (V<sub>t1</sub>) space, as V<sub>t2</sub> is already "full".</p>
+                <img src="fluid3.png" alt="Graph showing V_t2 saturation after repeat bolus" class="w-full h-auto rounded-lg border border-gray-200" onerror="this.onerror=null;this.src='https://placehold.co/800x400/ffffff/64748b?text=Figure+4:+V_t2+Saturation+(fluid3.png)';">
+                <p class="caption">
+                    Simulation of volume expansion with two 25 mL/kg boluses given 4 hours apart. Note that the slow-exchange compartment (V<sub>t2</sub>) does not further expand during the second infusion, showing it has a saturation limit.
+                </p>
+            </div>
+
+            <!-- NEW Card 6: A Clinical Tool: 20% Albumin -->
+            <div class="card p-6 md:p-8">
+                <h2 class="text-2xl font-bold mb-4 text-center">A Clinical Tool: 20% Albumin</h2>
+                <p class="text-center text-gray-700 mb-6">Hyper-oncotic albumin offers a potential mechanism for "de-resuscitation". It actively recruits fluid from the interstitium, dehydrating the whole body by stimulating diuresis.</p>
+                <img src="fluid1.jpg" alt="Graph showing fluid recruitment by 20% albumin" class="w-full h-auto rounded-lg border border-gray-200" onerror="this.onerror=null;this.src='https://placehold.co/800x400/ffffff/64748b?text=Figure+5:+Albumin+Fluid+Recruitment+(fluid1.jpg)';">
+                <p class="caption">
+                    Recruitment of interstitial fluid (solid blue line) and whole-body fluid balance (dashed red line) during and after an infusion of 20% albumin. The interstitium is dehydrated by over 600ml in 6 hours.
+                </p>
+            </div>
+
+            <!-- Card 7: Further Resources (was Card 5) -->
             <div class="card p-6 md:p-8">
                 <h2 class="text-2xl font-bold mb-6 text-center">Dive Deeper: Further Resources</h2>
                 <div class="grid md:grid-cols-2 gap-8 items-start">
